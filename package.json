@@ -1,0 +1,18 @@
+{
+  "name": "remotion-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Remotion workspace for multiple video projects",
+  "scripts": {
+    "template-gallery": "pnpm --filter @apps/template-gallery dev",
+    "lifeismamagoto": "pnpm --filter @apps/lifeismamagoto dev",
+    "dev:template": "pnpm --filter @apps/template-gallery dev",
+    "dev:life": "pnpm --filter @apps/lifeismamagoto dev",
+    "studio:template": "pnpm --filter @apps/template-gallery studio",
+    "studio:life": "pnpm --filter @apps/lifeismamagoto studio"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
