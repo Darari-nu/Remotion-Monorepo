@@ -10,12 +10,13 @@
     "upgrade": "remotion upgrade"
   },
   "dependencies": {
+    "@packages/shared-components": "workspace:*",
     "@remotion/bundler": "4.0.414",
     "@remotion/cli": "4.0.414",
     "@remotion/google-fonts": "^4.0.414",
+    "@remotion/media": "4.0.414",
     "@remotion/renderer": "4.0.414",
     "@remotion/zod-types": "4.0.414",
-    "@packages/shared-components": "workspace:*",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "remotion": "4.0.414",

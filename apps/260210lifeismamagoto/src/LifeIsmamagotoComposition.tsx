@@ -4,9 +4,11 @@ import {
   Img,
   staticFile,
 } from 'remotion';
+import { Audio } from '@remotion/media';
 import { z } from 'zod';
 import { zColor } from '@remotion/zod-types';
 import { SeamlessPetalSparkle } from './SeamlessEffects';
+import { BlinkingYui } from './BlinkingYui';
 
 // レイヤー設定のスキーマ
 const layerSchema = z.object({
@@ -65,6 +67,9 @@ export const LifeIsmamagotoComposition: React.FC<LifeIsmamagotoProps> = ({
 }) => {
   return (
     <AbsoluteFill style={{ backgroundColor }}>
+      {/* Audio */}
+      <Audio src={staticFile('Yui.wav')} />
+
       {/* Layer 1: カフェ背景画像（最下層） */}
       {bgLayer.show && (
         <AbsoluteFill
@@ -75,7 +80,7 @@ export const LifeIsmamagotoComposition: React.FC<LifeIsmamagotoProps> = ({
           }}
         >
           <Img
-            src={staticFile('sample-cafe.jpg')}
+            src={staticFile('cafe_background.png')}
             style={{
               width: '100%',
               height: '100%',
@@ -86,7 +91,7 @@ export const LifeIsmamagotoComposition: React.FC<LifeIsmamagotoProps> = ({
         </AbsoluteFill>
       )}
 
-      {/* Layer 2: Yui画像（中間レイヤー） */}
+      {/* Layer 2: Yui画像（中間レイヤー・瞬きあり） */}
       {yuiLayer.show && (
         <AbsoluteFill
           style={{
@@ -95,14 +100,14 @@ export const LifeIsmamagotoComposition: React.FC<LifeIsmamagotoProps> = ({
             mixBlendMode: yuiLayer.mixBlendMode as any,
           }}
         >
-          <Img
-            src={staticFile('Yui_earthkey 20260206.png')}
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              opacity: yuiLayer.opacity,
-            }}
+          <BlinkingYui
+            x={yuiLayer.x}
+            y={yuiLayer.y}
+            scale={yuiLayer.scale}
+            rotation={yuiLayer.rotation}
+            blur={yuiLayer.blur}
+            opacity={yuiLayer.opacity}
+            mixBlendMode={yuiLayer.mixBlendMode}
           />
         </AbsoluteFill>
       )}

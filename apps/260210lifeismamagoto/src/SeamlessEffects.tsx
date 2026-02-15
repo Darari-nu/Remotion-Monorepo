@@ -41,14 +41,15 @@ export const SeamlessPetalSparkle: React.FC<SeamlessPetalSparkleProps> = ({
 
   const petals: Petal[] = React.useMemo(() => {
     return Array.from({ length: particleCount }, (_, i) => {
-      const size = 10 + random(`petal-size-${i}`) * 15;
+      const scaleFactor = height / 1080;
+      const size = (8 + random(`petal-size-${i}`) * 12) * scaleFactor;
       const totalHeight = height + size * 2;
 
       // 元の速度範囲を維持
       const desiredSpeed = 0.3 + random(`petal-fall-${i}`) * 0.7;
 
       // 可能なサイクル数（0.5刻み）
-      const possibleCycles = [0.5, 1.0, 1.5, 2.0, 2.5, 3.0];
+      const possibleCycles = [0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0];
 
       // 元の速度に最も近いサイクルを選択
       // 実際の速度 = (totalHeight × cycles) / (durationInFrames × speed)
@@ -70,7 +71,7 @@ export const SeamlessPetalSparkle: React.FC<SeamlessPetalSparkleProps> = ({
         rotation: random(`petal-rot-${i}`) * 360,
         rotationSpeed: 0.5 + random(`petal-rot-speed-${i}`) * 2,
         fallSpeed: quantizedFallSpeed,
-        swayAmplitude: 20 + random(`petal-sway-${i}`) * 50,
+        swayAmplitude: (20 + random(`petal-sway-${i}`) * 50) * scaleFactor,
         swayFrequency: 0.01 + random(`petal-sway-freq-${i}`) * 0.02,
         phase: random(`petal-phase-${i}`) * Math.PI * 2,
         color: colors[Math.floor(random(`petal-color-${i}`) * colors.length)],
@@ -86,7 +87,7 @@ export const SeamlessPetalSparkle: React.FC<SeamlessPetalSparkleProps> = ({
       id: i,
       x: random(`ps-sparkle-x-${i}`) * width,
       y: random(`ps-sparkle-y-${i}`) * height,
-      size: 4 + random(`ps-sparkle-size-${i}`) * 6,
+      size: (4 + random(`ps-sparkle-size-${i}`) * 6) * (height / 1080),
       // オリジナルと同じ速度: 0.1〜0.3
       twinkleSpeed: 0.1 + random(`ps-sparkle-twinkle-${i}`) * 0.2,
       phase: random(`ps-sparkle-phase-${i}`) * Math.PI * 2,
