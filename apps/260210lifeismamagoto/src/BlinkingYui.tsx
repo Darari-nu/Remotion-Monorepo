@@ -22,31 +22,18 @@ export const BlinkingYui: React.FC<BlinkingYuiProps> = ({
 }) => {
   const frame = useCurrentFrame();
 
-  // 5秒 = 150フレーム (30fps)
-  const blinkInterval = 150;
+  // 10秒 = 300フレーム (30fps)
+  const blinkInterval = 300;
   const blinkDuration = 6; // 0.2秒 = 6フレーム
+  const firstBlinkDelay = 150; // 最初の瞬きは5秒後 = 150フレーム
 
-  // 5秒ごとのサイクル内での位置
-  const cycleFrame = frame % blinkInterval;
+  // 最初の瞬きまでの遅延を考慮
+  const adjustedFrame = frame - firstBlinkDelay;
 
-  // 瞬きアニメーション (0 = 目を開けてる, 1 = 目を閉じてる)
-  let blinkProgress = 0;
-
-  if (cycleFrame < blinkDuration / 2) {
-    // 閉じていく (0→1)
-    blinkProgress = interpolate(cycleFrame, [0, blinkDuration / 2], [0, 1]);
-  } else if (cycleFrame < blinkDuration) {
-    // 開いていく (1→0)
-    blinkProgress = interpolate(cycleFrame, [blinkDuration / 2, blinkDuration], [1, 0]);
-  }
-
-  // 瞬き中かどうか（0.5より大きければ閉じた目を表示）
-  const showClosedEyes = blinkProgress > 0.5;
-
-  return (
-    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-      {!showClosedEyes ? (
-        /* 通常の目を開けた画像 */
+  // まだ最初の瞬きタイミングに達していない場合は瞬きなし
+  if (adjustedFrame < 0) {
+    return (
+      <div style={{ position: 'relative', width: '100%', height: '100%' }}>
         <Img
           src={staticFile('Yui_earthkey 20260206.png')}
           style={{
@@ -56,11 +43,39 @@ export const BlinkingYui: React.FC<BlinkingYuiProps> = ({
             opacity: opacity,
           }}
         />
-      ) : (
-        /* 目を閉じた画像 */
+      </div>
+    );
+  }
+
+  // 10秒ごとのサイクル内での位置
+  const cycleFrame = adjustedFrame % blinkInterval;
+
+  // 瞬きの瞬間だけ目を閉じた画像を表示（中間フレームのみ）
+  // blinkDuration = 6フレーム: [0, 1, 2, 3, 4, 5]
+  // 閉じた目を表示するのは中央の2フレームのみ: [2, 3]
+  const showClosedEyes = cycleFrame >= blinkDuration / 3 && cycleFrame < (blinkDuration * 2) / 3;
+
+  return (
+    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+      {/* ベース画像（常に表示） */}
+      <Img
+        src={staticFile('Yui_earthkey 20260206.png')}
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          opacity: opacity,
+        }}
+      />
+
+      {/* 瞬き画像（顔の部分だけ、瞬きの時だけ重ねる） */}
+      {showClosedEyes && (
         <Img
-          src={staticFile('YUi_Closeeye.png')}
+          src={staticFile('YUi_Closeeye1.png')}
           style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
             width: '100%',
             height: '100%',
             objectFit: 'cover',
