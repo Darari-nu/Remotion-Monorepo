@@ -1,0 +1,64 @@
+
+- id: 1
+  character: "zundamon"
+  text: "ＥＵエーアイアクトって知ってるのだ？"
+  displayText: "EU AI Actって知ってるのだ？"
+  scene: 1
+  pauseAfter: 10
+  visual:
+    type: "text"
+    text: "EU AI Act\n(欧州AI規制法)"
+    fontSize: 80
+    color: "#ffffff"
+    animation: "zoomIn"
+
+- id: 2
+  character: "metan"
+  text: "世界初の包括的な、エーアイ規制法のことね。"
+  displayText: "世界初の包括的なAI規制法のことね。"
+  scene: 1
+  pauseAfter: 15
+
+- id: 3
+  character: "zundamon"
+  text: "どんな法律なのだ？"
+  scene: 2
+  pauseAfter: 10
+
+- id: 4
+  character: "metan"
+  text: "リスクの高さに応じて、禁止事項や義務が決まるのよ。"
+  scene: 2
+  pauseAfter: 20
+  visual:
+    type: "text"
+    text: "リスクベース\nアプローチ"
+    fontSize: 70
+    color: "#FFd700"
+    animation: "slideUp"
+
+- id: 5
+  character: "zundamon"
+  text: "違反するとどうなるのだ？"
+  emotion: "surprised"
+  scene: 2
+  pauseAfter: 10
+
+- id: 6
+  character: "metan"
+  text: "最大で、売上の７パーセントもの罰金があるわ。"
+  displayText: "最大で売上の7%もの罰金があるわ。"
+  scene: 2
+  pauseAfter: 20
+
+- id: 7
+  character: "zundamon"
+  text: "それはヤバいのだ！気をつけなきゃなのだ！"
+  scene: 3
+  pauseAfter: 10
+
+- id: 8
+  character: "metan"
+  text: "正しい知識で、安全に使っていきましょうね。"
+  scene: 3
+  pauseAfter: 30
