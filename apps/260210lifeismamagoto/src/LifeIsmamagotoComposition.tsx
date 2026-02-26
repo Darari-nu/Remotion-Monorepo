@@ -80,7 +80,7 @@ export const LifeIsmamagotoComposition: React.FC<LifeIsmamagotoProps> = ({
           }}
         >
           <Img
-            src={staticFile('cafe_background.png')}
+            src={staticFile('Cafe_background2.png')}
             style={{
               width: '100%',
               height: '100%',
