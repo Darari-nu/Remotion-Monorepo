@@ -12,7 +12,11 @@
     "studio:life": "pnpm --filter @apps/260210_lifeismamagoto studio",
     "voicevox": "pnpm --filter @apps/260122_remotion-voicevox-template start",
     "studio:voicevox": "pnpm --filter @apps/260122_remotion-voicevox-template start",
-    "dev:voicevox": "pnpm --filter @apps/260122_remotion-voicevox-template start"
+    "dev:voicevox": "pnpm --filter @apps/260122_remotion-voicevox-template start",
+    "yumekui": "pnpm --filter @apps/251019_Yumekui_baku_Lyric studio",
+    "studio:yumekui": "pnpm --filter @apps/251019_Yumekui_baku_Lyric studio",
+    "lyric-gen": "pnpm --filter @apps/260103_lyric-video-generator start",
+    "studio:lyric-gen": "pnpm --filter @apps/260103_lyric-video-generator start"
   },
   "engines": {
     "node": ">=18.0.0",

@@ -1,0 +1,27 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log*
+
+# Remotion
+out/
+.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.python-version
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Project specific
+temp/
+public/images/*.mp4
+src/remotion/lyrics.json
+node_modules

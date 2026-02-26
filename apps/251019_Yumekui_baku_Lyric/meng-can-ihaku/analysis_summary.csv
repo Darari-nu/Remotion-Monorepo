@@ -1,0 +1,5 @@
+metric,value,unit
+duration_sec,239.480000,seconds
+bpm,161.50,beats_per_minute
+estimated_bars,149,bars
+sample_rate,44100,Hz

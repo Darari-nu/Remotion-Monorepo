@@ -1,0 +1,7 @@
+segment_index,start_sec,end_sec,label
+0,0.000000,41.079000,verse
+1,41.079000,64.079000,pre-chorus
+2,64.079000,83.060000,chorus
+3,90.640000,109.240000,verse
+4,109.240000,150.539000,pre-chorus
+5,150.539000,199.860000,chorus
