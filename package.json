@@ -13,8 +13,8 @@
     "voicevox": "pnpm --filter @apps/260122_remotion-voicevox-template start",
     "studio:voicevox": "pnpm --filter @apps/260122_remotion-voicevox-template start",
     "dev:voicevox": "pnpm --filter @apps/260122_remotion-voicevox-template start",
-    "yumekui": "pnpm --filter @apps/251019_Yumekui_baku_Lyric studio",
-    "studio:yumekui": "pnpm --filter @apps/251019_Yumekui_baku_Lyric studio",
+    "yumekui": "pnpm --filter @apps/251206_MV_yumekuibaku dev",
+    "studio:yumekui": "pnpm --filter @apps/251206_MV_yumekuibaku dev",
     "lyric-gen": "pnpm --filter @apps/260103_lyric-video-generator start",
     "studio:lyric-gen": "pnpm --filter @apps/260103_lyric-video-generator start"
   },

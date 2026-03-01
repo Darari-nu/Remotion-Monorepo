@@ -1,0 +1,352 @@
+[
+  {
+    "text": "午前2時",
+    "section": "verse1",
+    "mode": "simple-fade",
+    "start": 19.85,
+    "end": 21.41
+  },
+  {
+    "text": "突然の悪夢",
+    "section": "verse1",
+    "mode": "simple-fade",
+    "start": 21.41,
+    "end": 23.16
+  },
+  {
+    "text": "窓の外は",
+    "section": "verse1",
+    "mode": "simple-fade",
+    "start": 23.59,
+    "end": 25.32
+  },
+  {
+    "text": "静かな雨音",
+    "section": "verse1",
+    "mode": "simple-fade",
+    "start": 25.72,
+    "end": 27.39
+  },
+  {
+    "text": "あの子の好きな",
+    "section": "verse1",
+    "mode": "simple-fade",
+    "start": 28.31,
+    "end": 30.06
+  },
+  {
+    "text": "優しい音",
+    "section": "verse1",
+    "mode": "simple-fade",
+    "start": 30.35,
+    "end": 31.95
+  },
+  {
+    "text": "耳をすませば\nさっきの恐怖は",
+    "section": "verse1",
+    "mode": "simple-fade",
+    "start": 32.8,
+    "end": 36.16
+  },
+  {
+    "text": "まるで",
+    "section": "verse1",
+    "mode": "simple-fade",
+    "start": 36.94,
+    "end": 37.74
+  },
+  {
+    "text": "バクが\n食べちゃったみたい",
+    "section": "verse1",
+    "mode": "simple-fade",
+    "start": 38.24,
+    "end": 41.58
+  },
+  {
+    "text": "昨日見た",
+    "section": "verse1",
+    "mode": "simple-fade",
+    "start": 42.21,
+    "end": 43.11
+  },
+  {
+    "text": "寂しそうな横顔",
+    "section": "verse1",
+    "mode": "simple-fade",
+    "start": 43.11,
+    "end": 45.35
+  },
+  {
+    "text": "あれは\nボクの\n気のせい？",
+    "section": "verse1",
+    "mode": "simple-fade",
+    "start": 45.95,
+    "end": 49.24
+  },
+  {
+    "text": "あの子には\n叩きつける嵐\nじゃなく",
+    "section": "verse1",
+    "mode": "simple-fade",
+    "start": 50.14,
+    "end": 54.69
+  },
+  {
+    "text": "やさしい",
+    "section": "verse1",
+    "mode": "simple-fade",
+    "start": 55.14,
+    "end": 55.74
+  },
+  {
+    "text": "雨音だけ",
+    "section": "verse1",
+    "mode": "simple-fade",
+    "start": 57.01,
+    "end": 58.87
+  },
+  {
+    "text": "届けばいいのに",
+    "section": "verse1",
+    "mode": "simple-fade",
+    "start": 59.38,
+    "end": 63.51
+  },
+  {
+    "text": "ねぇ",
+    "section": "chorus1",
+    "mode": "kinetic",
+    "start": 64.36,
+    "end": 65.21
+  },
+  {
+    "text": "夢喰いバク\nもしもいるのなら",
+    "section": "chorus1",
+    "mode": "kinetic",
+    "start": 65.53,
+    "end": 69.33
+  },
+  {
+    "text": "どうか今夜\nあの子の\n夢を守って",
+    "section": "chorus1",
+    "mode": "kinetic",
+    "start": 69.66,
+    "end": 73.46
+  },
+  {
+    "text": "ささくれみたいな\n後悔喉\nを締める言葉",
+    "section": "chorus1",
+    "mode": "kinetic",
+    "start": 73.63,
+    "end": 78.23
+  },
+  {
+    "text": "全部\n悪い夢にして\n食べ尽くして",
+    "section": "chorus1",
+    "mode": "kinetic",
+    "start": 79.22,
+    "end": 83.24
+  },
+  {
+    "text": "賑やかな昼休み",
+    "section": "verse2",
+    "mode": "simple-fade",
+    "start": 91.76,
+    "end": 93.77
+  },
+  {
+    "text": "すれ違いざま",
+    "section": "verse2",
+    "mode": "simple-fade",
+    "start": 93.99,
+    "end": 95.09
+  },
+  {
+    "text": "あの子から\n感じた\n涙の気配",
+    "section": "verse2",
+    "mode": "simple-fade",
+    "start": 95.63,
+    "end": 99.87
+  },
+  {
+    "text": "振り返って\n追いかけたいのに",
+    "section": "verse2",
+    "mode": "simple-fade",
+    "start": 100.29,
+    "end": 104.45
+  },
+  {
+    "text": "これは\n昨日見た\n悪夢の続きだ",
+    "section": "verse2",
+    "mode": "simple-fade",
+    "start": 104.83,
+    "end": 109.22
+  },
+  {
+    "text": "喉から\n手が出るほど\n願うのに",
+    "section": "verse2",
+    "mode": "simple-fade",
+    "start": 109.6,
+    "end": 113.1
+  },
+  {
+    "text": "地面に\n縫い付けられた\nうに",
+    "section": "verse2",
+    "mode": "simple-fade",
+    "start": 113.99,
+    "end": 118.77
+  },
+  {
+    "text": "僕の\n足は\n動かない",
+    "section": "verse2",
+    "mode": "simple-fade",
+    "start": 118.98,
+    "end": 122.98
+  },
+  {
+    "text": "今夜",
+    "section": "bridge",
+    "mode": "simple-fade",
+    "start": 127.04,
+    "end": 127.64
+  },
+  {
+    "text": "僕は\nバクの背中に\nまたがって",
+    "section": "bridge",
+    "mode": "simple-fade",
+    "start": 127.81,
+    "end": 131.41
+  },
+  {
+    "text": "ざらつく\n後悔の砂嵐を\n越える",
+    "section": "bridge",
+    "mode": "simple-fade",
+    "start": 132.15,
+    "end": 136.07
+  },
+  {
+    "text": "音を",
+    "section": "bridge",
+    "mode": "simple-fade",
+    "start": 136.4,
+    "end": 137.34
+  },
+  {
+    "text": "なくした\nあの子の心に",
+    "section": "bridge",
+    "mode": "simple-fade",
+    "start": 137.44,
+    "end": 140.44
+  },
+  {
+    "text": "産声\nみたいな夢を\n届けにいこう",
+    "section": "bridge",
+    "mode": "simple-fade",
+    "start": 140.77,
+    "end": 146.04
+  },
+  {
+    "text": "ねぇ",
+    "section": "chorus2",
+    "mode": "kinetic",
+    "start": 147.51,
+    "end": 148.36
+  },
+  {
+    "text": "夢喰いバク\n聞こえてる？",
+    "section": "chorus2",
+    "mode": "kinetic",
+    "start": 148.68,
+    "end": 151.95
+  },
+  {
+    "text": "あの子の泣き声が\n夜に溶けてく",
+    "section": "chorus2",
+    "mode": "kinetic",
+    "start": 152.38,
+    "end": 156.4
+  },
+  {
+    "text": "ボクの声じゃ\n届かないから",
+    "section": "chorus2",
+    "mode": "kinetic",
+    "start": 156.78,
+    "end": 160.7
+  },
+  {
+    "text": "君があの子を\n包んであげて",
+    "section": "chorus2",
+    "mode": "kinetic",
+    "start": 161.13,
+    "end": 165.71
+  },
+  {
+    "text": "朽ちユクだけノ",
+    "section": "outro",
+    "mode": "simple-fade",
+    "start": 184.01,
+    "end": 187.01
+  },
+  {
+    "text": "ちいサナはなモ",
+    "section": "outro",
+    "mode": "simple-fade",
+    "start": 187.51,
+    "end": 190.51
+  },
+  {
+    "text": "イノるコトバさえ",
+    "section": "outro",
+    "mode": "simple-fade",
+    "start": 191.01,
+    "end": 194.01
+  },
+  {
+    "text": "ナくしたくちびルも",
+    "section": "outro",
+    "mode": "simple-fade",
+    "start": 194.51,
+    "end": 197.51
+  },
+  {
+    "text": "スベて悪夢にシテ",
+    "section": "outro",
+    "mode": "simple-fade",
+    "start": 198.01,
+    "end": 201.01
+  },
+  {
+    "text": "クイ尽くスから",
+    "section": "outro",
+    "mode": "simple-fade",
+    "start": 201.51,
+    "end": 204.51
+  },
+  {
+    "text": "どうかアノコの",
+    "section": "outro",
+    "mode": "simple-fade",
+    "start": 205.01,
+    "end": 208.01
+  },
+  {
+    "text": "朝が",
+    "section": "outro",
+    "mode": "simple-fade",
+    "start": 208.51,
+    "end": 211.51
+  },
+  {
+    "text": "ハレ渡り",
+    "section": "outro",
+    "mode": "simple-fade",
+    "start": 212.01,
+    "end": 215.01
+  },
+  {
+    "text": "まスヨウに…",
+    "section": "outro",
+    "mode": "simple-fade",
+    "start": 215.51,
+    "end": 218.51
+  }
+]
