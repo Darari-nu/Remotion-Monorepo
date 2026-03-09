@@ -302,7 +302,7 @@ export const StandardSubtitleCompositionV7: React.FC<z.infer<typeof standardSubt
     return (
         <AbsoluteFill style={{ backgroundColor: 'black' }}>
             {/* Full MV Background Video */}
-            <Video src={staticFile('フル夢食いバク.mp4')} />
+            <Video src={staticFile('full_mv.mp4')} />
             {subtitles.map((currentSubtitle, index) => {
                 const style = getStyle(currentSubtitle.section);
 
