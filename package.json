@@ -16,7 +16,15 @@
     "yumekui": "pnpm --filter @apps/251206_MV_yumekuibaku dev",
     "studio:yumekui": "pnpm --filter @apps/251206_MV_yumekuibaku dev",
     "lyric-gen": "pnpm --filter @apps/260103_lyric-video-generator start",
-    "studio:lyric-gen": "pnpm --filter @apps/260103_lyric-video-generator start"
+    "studio:lyric-gen": "pnpm --filter @apps/260103_lyric-video-generator start",
+    "create": "tsx scripts/create-project.ts",
+    "render": "tsx scripts/render-app.ts",
+    "upgrade:remotion": "tsx scripts/upgrade-remotion.ts",
+    "clean": "tsx scripts/clean.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "turbo": "^2.3.3"
   },
   "engines": {
     "node": ">=18.0.0",

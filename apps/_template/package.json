@@ -1,0 +1,21 @@
+{
+  "name": "@studio/{{name}}",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "remotion studio",
+    "preview": "remotion preview",
+    "build": "remotion render src/index.ts TemplateMain out/template-main.mp4",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" remotion.config.ts"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "4.0.414",
+    "zod": "^3.22.3"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.414"
+  }
+}
